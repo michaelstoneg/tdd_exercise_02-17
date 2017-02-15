@@ -44,7 +44,7 @@ describe('palindromeCheck', () => {
   })
 });
 
-xdescribe('orderStringAlphabetically', () => {
+describe('orderStringAlphabetically', () => {
   it('should order a word alphabetically', () => {
     expect(orderStringAlphabetically('happy')).to.equal('ahppy');
   });

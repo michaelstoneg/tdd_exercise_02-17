@@ -53,6 +53,21 @@ function palindromeCheck(strng) {
 // write a function that returns the letters of a word or phrase in alphabetical order case insensive
 // eg. orderStringAlphabetically('javascript is cool') => 'aacciijlooprsstv'
 function orderStringAlphabetically(string) {
+  string = string.replace(/ /g, '');
+  string = string.toLocaleLowerCase();
+  console.log('string', string);
+
+  string = string.split('');
+  console.log('string as array', string);
+
+
+  let sorted = string.sort();
+  console.log('sorted', sorted);
+
+  let result = sorted.join('');
+  // let result = sorted.replace(/([A-Z])/g, '');
+  console.log('final product', result);
+  return result;
 
 }
 
